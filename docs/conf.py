@@ -31,14 +31,13 @@ release = '1.0'
 # Add any Sphinx extension module names here, as strings. They can be
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
-extensions = ['sphinx_book_theme', 'sphinx-markdown-tables']
-source_parsers = {
-  '.md': CommonMarkParser,
-}
-source_suffix={
-    '.rst',
-    '.md'
-}
+extensions = [
+    "myst_parser",
+    'sphinx_book_theme',
+    'sphinx_markdown_tables',]
+
+source_suffix={'.rst':'restructuredtext', '.md': 'markdown',}
+
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -62,8 +61,24 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 html_theme = 'sphinx_book_theme'
+html_title = "Fusion360 Docs"
+html_copy_source = True
+html_sourcelink_suffix = ""
+html_favicon = ""
+html_last_updated_fmt = ""
 html_theme_path=["_themes",]
-
+html_sidebars = {
+    "reference/blog/*": [
+        "sidebar-logo.html",
+        "search-field.html",
+        "postcard.html",
+        "recentposts.html",
+        "tagcloud.html",
+        "categories.html",
+        "archives.html",
+        "sbt-sidebar-nav.html",
+    ]
+}
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
