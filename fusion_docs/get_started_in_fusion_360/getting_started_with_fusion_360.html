@@ -1,0 +1,640 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Fusion 360 시작하기 &#8212; Fusion360 Docs</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../_static/translations.js"></script>
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="액세스 Fusion 360" href="access_fusion_360/access_fusion_360.html" />
+    <link rel="prev" title="Fusion 360 시작하기" href="index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ko">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Fusion360 Docs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="index.html">
+   Fusion 360 시작하기
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Fusion 360 시작하기
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="access_fusion_360/access_fusion_360.html">
+     액세스 Fusion 360
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="access_fusion_360/download_fusion_360.html">
+       다운로드 Fusion 360
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="access_fusion_360/verify_access_to_fusion_team.html">
+       Fusion Team에 대한 액세스 권한 확인
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="access_fusion_360/basic_access.html">
+       기본 액세스
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="Tour_the_interface/tour_the_interface.html">
+     인터페이스 둘러보기
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Tour_the_interface/data_Panel.html">
+       데이터 패널
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Tour_the_interface/workspaces.html">
+       작업공간
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Tour_the_interface/learning_pannel.html">
+       학습 패널
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Tour_the_interface/home_tab.html">
+       홈 탭
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Tour_the_interface/making_menu.html">
+       표식 메뉴
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="create_your_first_project/create_your_first_project.html">
+     첫 번째 프로젝트 작성
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="create_your_first_project/learn_the_basics.html">
+       기본 사항 학습
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="create_your_first_project/navigation.html">
+       탐색
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="create_your_first_project/start_your_design.html">
+       디자인 시작
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html">
+     환경 사용자화
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="custiomize_your_experience/try_preview_features.html">
+       미리보기 기능 사용해 보기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="custiomize_your_experience/extend_your_capability.html">
+       기능 확장
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="custiomize_your_experience/build_your_expertise.html">
+       전문 지식 습득
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/fusion_docs/get_started_in_fusion_360/getting_started_with_fusion_360.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Fusion 360(이)란 무엇입니까?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Fusion 360 데이터가 저장된 위치
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   디자인 전략
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     <strong>
+      디자인 프로세스에서 Fusion 360이(가) 적합한 위치
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     <strong>
+      하향식 디자인 방법론
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     <strong>
+      파일 구조
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     <strong>
+      바디 및 구성요소
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     <strong>
+      강체 그룹
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     <strong>
+      접합
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     <strong>
+      현재 위치에서 접합
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set">
+     <strong>
+      접촉 set들
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Fusion 360 시작하기</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Fusion 360(이)란 무엇입니까?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   Fusion 360 데이터가 저장된 위치
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   디자인 전략
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     <strong>
+      디자인 프로세스에서 Fusion 360이(가) 적합한 위치
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     <strong>
+      하향식 디자인 방법론
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     <strong>
+      파일 구조
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     <strong>
+      바디 및 구성요소
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     <strong>
+      강체 그룹
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+     <strong>
+      접합
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     <strong>
+      현재 위치에서 접합
+     </strong>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#set">
+     <strong>
+      접촉 set들
+     </strong>
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="fusion-360">
+<h1>Fusion 360 시작하기<a class="headerlink" href="#fusion-360" title="이 표제에 대한 퍼머링크">#</a></h1>
+<p>Autodesk® Fusion 360®이(가) 디자인에 생기를 불어넣는 데 어떻게 도움이 되는지 알아보십시오.</p>
+<section id="id1">
+<h2>Fusion 360(이)란 무엇입니까?<a class="headerlink" href="#id1" title="이 표제에 대한 퍼머링크">#</a></h2>
+<p>Fusion 360은(는) 협업 제품 개발을 위한 클라우드 기반 CAD/CAM/CAE 도구입니다. Fusion 360은(는) 빠르고 쉬운 유기체 모델링과 정밀 솔리드 모델링을 결합하므로 제조 가능한 디자인을 작성할 수 있습니다.</p>
+<p>이 짧은 비디오를 시청하면 Fusion 360을(를) 사용하여 얻을 수 있는 결과를 알아볼 수 있습니다.
+<a class="reference external" href="https://www.youtube.com/watch?v=1Eyd4MwWbO0"><img alt="Video Label" src="https://img.youtube.com/vi/1Eyd4MwWbO0/0.jpg" /></a></p>
+</section>
+<section id="id2">
+<h2>Fusion 360 데이터가 저장된 위치<a class="headerlink" href="#id2" title="이 표제에 대한 퍼머링크">#</a></h2>
+<p>모든 Fusion 360 디자인 데이터는 클라우드에 저장됩니다.</p>
+<p>어디서든 안전하게 Fusion 360 데이터에 액세스할 수 있습니다. 또한 그룹 프로젝트를 사용하여 디자인 데이터에 액세스하고 공동 작업할 수 있는 다른 사용자를 제어할 수 있습니다.</p>
+<p>팁: 인터넷에 액세스할 수 없는 경우에도 오프라인 모드에서 Fusion 360을(를) 사용할 수 있습니다. <a class="reference external" href="https://help.autodesk.com/view/fusion360/ENU/?guid=ASM-FUSION-OFFLINE-MODE">오프라인 모드에서 작업 </a>방법을 알아봅니다.<br />
+<a class="reference external" href="https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-FA3DE862-9F5F-4DBC-AAF6-F2BD00E48994">Fusion 360의 설계 데이터 관리에 대해 자세히 알아보십시오.</a></p>
+</section>
+<section id="id3">
+<h2>디자인 전략<a class="headerlink" href="#id3" title="이 표제에 대한 퍼머링크">#</a></h2>
+<section id="id4">
+<h3><strong>디자인 프로세스에서 Fusion 360이(가) 적합한 위치</strong><a class="headerlink" href="#id4" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>Fusion 360에서는 Mac과 PC를 위한 단일 클라우드 기반 플랫폼에서 전체 제품 개발 프로세스를 연결할 수 있습니다.</p>
+<p>스컬프팅, 모델링 및 제너레이티브 디자인 도구를 사용하여 디자인 형태를 탐구하고 다듬을 수 있습니다.</p>
+<p>Fusion 360 디자인은 클라우드에 저장되고 팀과 공유되기 때문에 디자인 아이디어를 실시간으로 반복할 수 있어 팀 생산성이 향상됩니다.</p>
+<p>조립품, 접합 및 동작 학습, 시뮬레이션을 통해 디자인을 최적화하고 검증할 수 있습니다.</p>
+<p>그런 다음 사실적 렌더링과 애니메이션을 통해 디자인을 전달할 수 있습니다.</p>
+<p>마지막으로, 디자인의 신속한 프로토타입을 3D 프린터로 인쇄하거나 CNC 기계의 CAM 도구 경로를 생성하여 디자인을 제조할 수 있습니다.</p>
+</section>
+<section id="id5">
+<h3><strong>하향식 디자인 방법론</strong><a class="headerlink" href="#id5" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>Fusion 360에서는 하향식 디자인 접근 방식을 사용합니다. 이 접근 방식에서는 시스템을 세분화하여 복잡한 하위 시스템을 파악합니다.</p>
+<p>하향식 접근 방식에서는 조립품의 개요를 작성한 다음 전체 지정이 기준 요소로 줄어들 때까지 각 부분조립품과 부품을 보다 세부적으로 미세 조정합니다.</p>
+<p>하향식 조립품 디자인에서는 배치 스케치 또는 다른 부품의 형상과 같은 조립품 내의 요소를 기준으로 부품의 피쳐를 정의합니다. 디자인 의도(피쳐의 크기, 구성요소의 배치, 다른 부품에 대한 근접성 등)는 상단(조립품)에서 아래로 이동하여 “하향식”이라는 문구를 사용합니다.</p>
+<p>이 짧은 비디오를 시청하면 디자인 의도, 하향식 디자인 및 상향식 디자인, 규칙 1에 대해 알아볼 수 있습니다.
+<a class="reference external" href="https://help.autodesk.com/view/fusion360/ENU/?guid=GUID-1C665B4D-7BF7-4FDF-98B0-AA7EE12B5AC2&amp;wvideo=vr5qmj8bzm"><img alt="Video Label" src="https://embed-ssl.wistia.com/deliveries/be0b5af04b196152190e389cd51b149b5198e48f.jpg?image_play_button_size=2x&amp;image_crop_resized=960x540&amp;image_play_button=1&amp;image_play_button_color=000000e0" /></a></p>
+</section>
+<section id="id6">
+<h3><strong>파일 구조</strong><a class="headerlink" href="#id6" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>Fusion 360에서는 단일 기능 단위로 동작하는 구성요소를 조립품 문서에 배치합니다. 조립품 접합과 구속조건은 이러한 구성요소의 위치 및 동작을 정의합니다. 예를 들어, 샤프트의 축은 다른 구성요소에 있는 구멍의 중심에 정렬됩니다.</p>
+<p>부품을 조립품에 삽입하거나 스케치 및 부품 명령을 사용하여 조립품 환경에서 부품을 작성할 수 있습니다. 이러한 작업 동안 조립품의 모든 다른 구성요소가 표시됩니다.</p>
+<p>모형을 완성하기 위해서는 여러 부품을 통과하는 구멍 같이 여러 구성요소에 영향을 미치는 조립품 피쳐를 작성할 수 있습니다. 조립품 피쳐는 종종 사후 기계 작업과 같은 특정 제조 프로세스를 설명합니다.</p>
+</section>
+<section id="id7">
+<h3><strong>바디 및 구성요소</strong><a class="headerlink" href="#id7" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>조립품의 외부 부품을 참조하는 CAD 시스템에 대해 잘 알고 있다면 가장 먼저 알아야 할 사항은 Fusion 360의 “부품 파일”과 “구성요소”라는 점입니다. 모든 구성요소가 동일한 Fusion 360 파일에 있습니다. 구성요소 그룹은 부분조립품처럼 작동하고, 바디는 전역 공간 또는 구성요소에 있는 물리적 객체입니다. 구성요소의 여러 복제를 작성할 수 있으며 하나를 수정하면 다른 모든 복제가 수정됩니다.</p>
+</section>
+<section id="id8">
+<h3><strong>강체 그룹</strong><a class="headerlink" href="#id8" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>강체 관절을 여러 개 작성하는 대신 강체 그룹을 작성하여 서로에 대한 상대적인 이동 없이 여러 바디를 서로 제한할 수 있습니다. 강체 그룹 기능은 선택한 구성요소의 상대적 위치를 잠급니다. 구성요소에 접합을 이동하거나 적용하면 단일 객체로 처리됩니다.</p>
+</section>
+<section id="id9">
+<h3><strong>접합</strong><a class="headerlink" href="#id9" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>접합은 부품 사이의 자유도를 정의하여 조립품에서 구성요소가 이동하는 방식을 표시합니다. 이들은 동작 학습 및 애니메이션을 구동합니다. 접합은 구성요소 간에 작성되지만 바디, 면 또는 모서리와 같은 구성요소 내의 특정 피쳐에 의해 정의됩니다.</p>
+</section>
+<section id="id10">
+<h3><strong>현재 위치에서 접합</strong><a class="headerlink" href="#id10" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>디자인 구성요소가 이미 서로 상대적인 올바른 위치에 있는 경우 현재 위치에서 접합을 사용하여 구속할 수 있습니다. 현재 위치에서 접합은 위치를 유지하고 상대 동작을 정의합니다.</p>
+</section>
+<section id="set">
+<h3><strong>접촉 set들</strong><a class="headerlink" href="#set" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>접촉 세트를 사용하여 서로 접촉한 후에 간섭하지 않는 구성요소를 지정합니다. 구성요소가 접촉할 때 발생하는 동작 제한을 정의할 수 있습니다.</p>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="index.html" title="이전 페이지">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">이전</p>
+            <p class="prev-next-title">Fusion 360 시작하기</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="access_fusion_360/access_fusion_360.html" title="다음 페이지">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">다음</p>
+        <p class="prev-next-title">액세스 Fusion 360</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By leehyungjin<br/>
+  
+      &copy; Copyright 2022, leehyungjin.<br/>
+    Last updated on 2022년 07월 31일.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

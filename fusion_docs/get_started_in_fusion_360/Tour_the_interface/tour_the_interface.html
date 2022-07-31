@@ -1,0 +1,609 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>인터페이스 둘러보기 &#8212; Fusion360 Docs</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../_static/translations.js"></script>
+    <link rel="index" title="색인" href="../../../genindex.html" />
+    <link rel="search" title="검색" href="../../../search.html" />
+    <link rel="next" title="데이터 패널" href="data_Panel.html" />
+    <link rel="prev" title="기본 액세스" href="../access_fusion_360/basic_access.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ko">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Fusion360 Docs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../index.html">
+   Fusion 360 시작하기
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../getting_started_with_fusion_360.html">
+     Fusion 360 시작하기
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../access_fusion_360/access_fusion_360.html">
+     액세스 Fusion 360
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../access_fusion_360/download_fusion_360.html">
+       다운로드 Fusion 360
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../access_fusion_360/verify_access_to_fusion_team.html">
+       Fusion Team에 대한 액세스 권한 확인
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../access_fusion_360/basic_access.html">
+       기본 액세스
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="current reference internal" href="#">
+     인터페이스 둘러보기
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="data_Panel.html">
+       데이터 패널
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="workspaces.html">
+       작업공간
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="learning_pannel.html">
+       학습 패널
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="home_tab.html">
+       홈 탭
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="making_menu.html">
+       표식 메뉴
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../create_your_first_project/create_your_first_project.html">
+     첫 번째 프로젝트 작성
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../create_your_first_project/learn_the_basics.html">
+       기본 사항 학습
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../create_your_first_project/navigation.html">
+       탐색
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../create_your_first_project/start_your_design.html">
+       디자인 시작
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../custiomize_your_experience/custiomize_yout_experience.html">
+     환경 사용자화
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../custiomize_your_experience/try_preview_features.html">
+       미리보기 기능 사용해 보기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../custiomize_your_experience/extend_your_capability.html">
+       기능 확장
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../custiomize_your_experience/build_your_expertise.html">
+       전문 지식 습득
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/fusion_docs/get_started_in_fusion_360/Tour_the_interface/tour_the_interface.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   도구막대 팁
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ui-ui">
+   이전 UI와 새 UI의 동영상 비교
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>인터페이스 둘러보기</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   도구막대 팁
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ui-ui">
+   이전 UI와 새 UI의 동영상 비교
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="id1">
+<h1>인터페이스 둘러보기<a class="headerlink" href="#id1" title="이 표제에 대한 퍼머링크">#</a></h1>
+<p>디자인을 시작할 때 Fusion 360 인터페이스를 살펴보고 모든 디자인 도구가 어디에 있는지 알아보십시오.
+<img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/diagram/ui-overview-jan21.png" /></p>
+<ol class="arabic simple">
+<li><p><strong>데이터 패널</strong>: <strong>데이터 패널</strong>에서 팀, 프로젝트 및 디자인에 액세스하고, 디자인 데이터를 관리하고, 다른 사용자와 공동작업을 수행할 수 있습니다.</p></li>
+<li><p><strong>응용프로그램 막대</strong>(왼쪽에서 오른쪽으로):</p>
+<ul class="simple">
+<li><p>데이터 패널 데이터 <img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/common/data-panel.png" />: 데이터 패널을 표시하거나 숨깁니다.</p></li>
+<li><p>파일 메뉴 <img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/common/file.png" />: 디자인을 작성, 열기, 업로드, 저장, 내보내기, 복구, 3D 인쇄 및 공유할 수 있습니다.</p></li>
+<li><p>저장 <img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/common/save.png" />: 제목 없는 디자인을 저장하거나 디자인에 변경 사항을 저장합니다.</p></li>
+<li><p>명령취소/다시 실행 <img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/common/undo.png" /> <img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/common/redo.png" /></p></li>
+<li><p>디자인 탭을 엽니다.</p></li>
+<li><p>새 디자인<img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/common/new-design.png" />: 새 디자인을 작성합니다.</p></li>
+<li><p>알림 센터<img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/common/notification-center.png" /></p></li>
+<li><p>익스텐션<img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/common/extension.png" />: Fusion 360 익스텐션에 대한 액세스를 관리합니다.</p></li>
+<li><p>작업 상태<img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/common/job-status.png" />: 작업 상태, Fusion 360 업데이트 상태 및 온라인/오프라인 상태를 봅니다.<br />
+<img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/menu/job-status-jan21.png" /></p></li>
+<li><p>도움말 <img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/icon/common/help.png" />: Fusion 360 학습 컨텐츠, 문서, 빠른 설정, 커뮤니티 리소스, 기술 지원, 진단 도구, 새로워진 사항 및 설치에 대한 정보에 액세스할 수 있습니다.<br />
+<img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/menu/help-jan21.png" /></p></li>
+<li><p>내 프로파일을 클릭하여 다음을 수행합니다.</p>
+<ul>
+<li><p>Autodesk Account에 액세스합니다.</p>
+<ul>
+<li><p>프로파일과 연관된 사진을 변경합니다.</p></li>
+</ul>
+</li>
+<li><p>Fusion 360 기본 설정을 조정합니다.</p></li>
+<li><p>프로파일을 보거나 편집합니다.</p></li>
+<li><p>로그아웃합니다.<br />
+<img alt="img" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-GetStarted/images/menu/profile-jan21.png" /></p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>도구막대</strong>: 작업할 작업공간을 선택합니다. <strong>도구막대</strong>의 도구는 작업공간마다 다릅니다. <strong>도구막대</strong>는 도구를 논리적 그룹으로 구성하는 탭으로 구분됩니다.</p>
+<ul class="simple">
+<li><p><strong>작업공간</strong>: Fusion 360은(는) 작업공간을 사용하여 사용 가능한 명령과 작성하는 데이터 유형을 조정합니다.</p>
+<ul>
+<li><p><strong>작업공간 선택기</strong>: 작업공간 간에 전환하려면 현재 작업공간의 이름을 선택합니다.</p></li>
+</ul>
+</li>
+<li><p><strong>탭</strong>: 각 작업공간은 관련 도구의 논리적 그룹이 포함된 탭으로 구성됩니다.</p>
+<ul>
+<li><p><strong>상황별 탭</strong>: 일부 명령은 <strong>스케치</strong>와 같은 상황별 탭을 활성화합니다. 상황별 탭은 상황별 도구가 활성화되어 있는 동안 <strong>도구막대</strong>에 작업공간 내의 다른 탭과 함께 표시됩니다.</p></li>
+<li><p><strong>상황별 환경</strong>: 일부 명령은 <strong>자유형</strong>과 같은 상황별 환경을 활성화합니다. 상황별 환경은 <strong>도구막대</strong>에 표시되고, 상황별 환경을 종료할 때까지 해당 탭이 현재 작업공간의 기본 탭을 대치합니다.</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>브라우저</strong>: 조립품의 객체(구성요소, 바디, 스케치, 원점, 접합, 구성 형상 등)를 나열하고 객체의 가시성을 제어할 수 있습니다.</p></li>
+<li><p><strong>캔버스</strong>의 <strong>조립품</strong>: 마우스 왼쪽 버튼을 클릭하여 캔버스의 조립품에서 객체를 선택합니다.</p></li>
+<li><p><strong>ViewCube</strong>: 디자인을 궤도 이동하거나 다른 위치에서 봅니다.</p></li>
+<li><p><strong>표식 메뉴</strong>: 마우스 오른쪽 버튼을 클릭하여 <strong>표식 메뉴</strong>에 액세스합니다. 이 메뉴에는 휠에 자주 사용되는 명령과 오버플로우 메뉴의 추가 명령이 포함되어 있습니다.</p></li>
+<li><p><strong>탐색 막대</strong>: 디자인을 줌, 초점이동 및 궤도 이동하는 데 사용되는 명령과 인터페이스의 모양 및 디자인 조립품이 캔버스에 표시되는 방법을 제어하는 화면표시 설정이 포함되어 있습니다.</p></li>
+<li><p><strong>타임라인</strong>: 디자인에서 수행된 작업을 나열합니다. 타임라인에서 작업을 마우스 오른쪽 버튼으로 클릭하여 변경합니다. 작업을 끌어 작업이 계산되는 순서를 변경합니다. (파라메트릭 모델링 모드만 해당)</p></li>
+</ol>
+<section id="id2">
+<h2>도구막대 팁<a class="headerlink" href="#id2" title="이 표제에 대한 퍼머링크">#</a></h2>
+<ul class="simple">
+<li><p>다른 탭이 표시되면 해당 탭에서 도구에 액세스할 수 있습니다.</p></li>
+<li><p><strong>스케치</strong> 모드에 있는 경우 <strong>수정</strong> 드롭다운 메뉴에서 <strong>매개변수 관리</strong>에 액세스할 수 있습니다.</p></li>
+<li><p>API 구조를 사용하면 <strong>애드인</strong>을 지정된 탭의 도구 내에 있는 자체 패널에 배치할 수 있습니다. 샘플 스크립트는 <strong>애드인</strong> 섹션에서 찾을 수 있습니다.</p></li>
+</ul>
+</section>
+<section id="ui-ui">
+<h2>이전 UI와 새 UI의 동영상 비교<a class="headerlink" href="#ui-ui" title="이 표제에 대한 퍼머링크">#</a></h2>
+<p>2019년 9월에 Fusion 360 사용자 인터페이스가 크게 변경되었습니다. 이전 UI와 새 UI 간의 빠른 비교를 보려면 아래 비디오를 시청하십시오.
+<a class="reference external" href="https://www.youtube.com/watch?v=Zf-fErCl43I"><img alt="Video Label" src="https://img.youtube.com/vi/Zf-fErCl43I/0.jpg" /></a>
+<a class="reference external" href="https://www.youtube.com/watch?v=CXGBZQRDV2s"><img alt="Video Label" src="https://img.youtube.com/vi/CXGBZQRDV2s/0.jpg" /></a></p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="data_Panel.html">데이터 패널</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="data_Panel.html#id2">프로젝트 참여</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_Panel.html#id3">프로젝트에 대한 액세스 권한 부여(관리자만)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_Panel.html#id4">프로젝트 고정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_Panel.html#id5">프로젝트 열기</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="data_Panel.html#id6">1. 프로젝트 선택기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_Panel.html#id7">2. 프로젝트 도구</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_Panel.html#id8">3. 데이터 패널 표시/숨기기</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_Panel.html#id9">4. 데이터 또는 사용자</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_Panel.html#id10">5. 보기 도구</a></li>
+<li class="toctree-l3"><a class="reference internal" href="data_Panel.html#id11">6. 상황에 맞는 메뉴</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="workspaces.html">작업공간</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="workspaces.html#fusion-360">Fusion 360의 작업공간</a></li>
+<li class="toctree-l2"><a class="reference internal" href="workspaces.html#id2">디자인 작업공간</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id3"><strong>스케치 상황별 탭</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id4"><strong>솔리드 탭</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id5"><strong>자유형 상황별 환경</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id6"><strong>곡면 탭</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id7"><strong>메쉬 탭</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id8"><strong>판금 탭</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id9">플랫 패턴 상황별 환경</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id10">기준 피쳐 상황별 환경</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workspaces.html#id11">전자 제품</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id12"><strong>전자 제품 디자인</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id13"><strong>전자공학 라이브러리</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workspaces.html#id14">제너레이티브 디자인 작업공간</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id15"><strong>정의 탭</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id16">모형 편집 상황별 환경</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id17">탐색 상황별 환경</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workspaces.html#id18">렌더 작업공간</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id19">시뮬레이션 작업공간</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id20">설정 탭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id21">결과 탭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id22">단순화 상황별 환경</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id23">비교 상황별 환경</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workspaces.html#id24">제조 작업공간</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id25">밀링 탭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id26">터닝 탭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id27">적층 탭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id28">검사 탭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id29">제작 탭</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id30">유틸리티 탭</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="workspaces.html#id31">도면 작업공간</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id32">제목 블록 상황별 환경</a></li>
+<li class="toctree-l3"><a class="reference internal" href="workspaces.html#id33">경계 상황별 환경</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="learning_pannel.html">학습 패널</a></li>
+<li class="toctree-l1"><a class="reference internal" href="home_tab.html">홈 탭</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="home_tab.html#home">Home 탭 액세스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home_tab.html#fusion-360">Fusion 360에서 팀 간 전환</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home_tab.html#id2">전환기에 대한 상황별 컨트롤에 액세스</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home_tab.html#id3">프로젝트 열기 또는 작성</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home_tab.html#fusion-360-manage-extension">최근 데이터, 프로젝트 또는 사용 가능한 경우 Fusion 360 Manage Extension 확인</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home_tab.html#id4">리스트 뷰와 그리드 뷰 간 전환</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home_tab.html#id5">프로젝트 정렬</a></li>
+<li class="toctree-l2"><a class="reference internal" href="home_tab.html#id6">선택한 구성요소의 특성 표시</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="making_menu.html">표식 메뉴</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="making_menu.html#id2">첫 번째 수준 방사형 메뉴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="making_menu.html#id3">두 번째 수준 방사형 메뉴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="making_menu.html#id4">상황에 맞는 메뉴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="making_menu.html#id5">제스처</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../access_fusion_360/basic_access.html" title="이전 페이지">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">이전</p>
+            <p class="prev-next-title">기본 액세스</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="data_Panel.html" title="다음 페이지">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">다음</p>
+        <p class="prev-next-title">데이터 패널</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By leehyungjin<br/>
+  
+      &copy; Copyright 2022, leehyungjin.<br/>
+    Last updated on 2022년 07월 31일.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

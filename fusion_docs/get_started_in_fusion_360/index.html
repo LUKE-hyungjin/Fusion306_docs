@@ -1,0 +1,623 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Fusion 360 시작하기 &#8212; Fusion360 Docs</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../_static/translations.js"></script>
+    <link rel="index" title="색인" href="../../genindex.html" />
+    <link rel="search" title="검색" href="../../search.html" />
+    <link rel="next" title="Fusion 360 시작하기" href="getting_started_with_fusion_360.html" />
+    <link rel="prev" title="Welcome to fusion360-docs’s documentation!" href="../../index.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ko">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Fusion360 Docs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Fusion 360 시작하기
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="getting_started_with_fusion_360.html">
+     Fusion 360 시작하기
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="access_fusion_360/access_fusion_360.html">
+     액세스 Fusion 360
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="access_fusion_360/download_fusion_360.html">
+       다운로드 Fusion 360
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="access_fusion_360/verify_access_to_fusion_team.html">
+       Fusion Team에 대한 액세스 권한 확인
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="access_fusion_360/basic_access.html">
+       기본 액세스
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="Tour_the_interface/tour_the_interface.html">
+     인터페이스 둘러보기
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Tour_the_interface/data_Panel.html">
+       데이터 패널
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Tour_the_interface/workspaces.html">
+       작업공간
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Tour_the_interface/learning_pannel.html">
+       학습 패널
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Tour_the_interface/home_tab.html">
+       홈 탭
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="Tour_the_interface/making_menu.html">
+       표식 메뉴
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="create_your_first_project/create_your_first_project.html">
+     첫 번째 프로젝트 작성
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="create_your_first_project/learn_the_basics.html">
+       기본 사항 학습
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="create_your_first_project/navigation.html">
+       탐색
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="create_your_first_project/start_your_design.html">
+       디자인 시작
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html">
+     환경 사용자화
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="custiomize_your_experience/try_preview_features.html">
+       미리보기 기능 사용해 보기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="custiomize_your_experience/extend_your_capability.html">
+       기능 확장
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="custiomize_your_experience/build_your_expertise.html">
+       전문 지식 습득
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../_sources/fusion_docs/get_started_in_fusion_360/index.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Fusion 360 시작하기</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="fusion-360">
+<h1>Fusion 360 시작하기<a class="headerlink" href="#fusion-360" title="이 표제에 대한 퍼머링크">#</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="getting_started_with_fusion_360.html">Fusion 360 시작하기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_with_fusion_360.html#id1">Fusion 360(이)란 무엇입니까?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_with_fusion_360.html#id2">Fusion 360 데이터가 저장된 위치</a></li>
+<li class="toctree-l2"><a class="reference internal" href="getting_started_with_fusion_360.html#id3">디자인 전략</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="getting_started_with_fusion_360.html#id4"><strong>디자인 프로세스에서 Fusion 360이(가) 적합한 위치</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started_with_fusion_360.html#id5"><strong>하향식 디자인 방법론</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started_with_fusion_360.html#id6"><strong>파일 구조</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started_with_fusion_360.html#id7"><strong>바디 및 구성요소</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started_with_fusion_360.html#id8"><strong>강체 그룹</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started_with_fusion_360.html#id9"><strong>접합</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started_with_fusion_360.html#id10"><strong>현재 위치에서 접합</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="getting_started_with_fusion_360.html#set"><strong>접촉 set들</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="access_fusion_360/access_fusion_360.html">액세스 Fusion 360</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="access_fusion_360/access_fusion_360.html#id1">라이센스 유형</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="access_fusion_360/download_fusion_360.html">다운로드 Fusion 360</a></li>
+<li class="toctree-l3"><a class="reference internal" href="access_fusion_360/verify_access_to_fusion_team.html">Fusion Team에 대한 액세스 권한 확인</a></li>
+<li class="toctree-l3"><a class="reference internal" href="access_fusion_360/basic_access.html">기본 액세스</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="access_fusion_360/basic_access.html#id2">기본 액세스</a></li>
+<li class="toctree-l4"><a class="reference internal" href="access_fusion_360/basic_access.html#id3">기본 액세스(개인 라이센스 포함)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="access_fusion_360/basic_access.html#fusion-360">Fusion 360(기본 액세스 포함)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="access_fusion_360/basic_access.html#fusion-team">Fusion Team(기본 액세스 포함)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Tour_the_interface/tour_the_interface.html">인터페이스 둘러보기</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Tour_the_interface/tour_the_interface.html#id2">도구막대 팁</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tour_the_interface/tour_the_interface.html#ui-ui">이전 UI와 새 UI의 동영상 비교</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Tour_the_interface/data_Panel.html">데이터 패널</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/data_Panel.html#id2">프로젝트 참여</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/data_Panel.html#id3">프로젝트에 대한 액세스 권한 부여(관리자만)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/data_Panel.html#id4">프로젝트 고정</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/data_Panel.html#id5">프로젝트 열기</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/data_Panel.html#id6">1. 프로젝트 선택기</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/data_Panel.html#id7">2. 프로젝트 도구</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/data_Panel.html#id8">3. 데이터 패널 표시/숨기기</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/data_Panel.html#id9">4. 데이터 또는 사용자</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/data_Panel.html#id10">5. 보기 도구</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/data_Panel.html#id11">6. 상황에 맞는 메뉴</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tour_the_interface/workspaces.html">작업공간</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/workspaces.html#fusion-360">Fusion 360의 작업공간</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/workspaces.html#id2">디자인 작업공간</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id3"><strong>스케치 상황별 탭</strong></a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id4"><strong>솔리드 탭</strong></a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id5"><strong>자유형 상황별 환경</strong></a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id6"><strong>곡면 탭</strong></a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id7"><strong>메쉬 탭</strong></a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id8"><strong>판금 탭</strong></a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id9">플랫 패턴 상황별 환경</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id10">기준 피쳐 상황별 환경</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/workspaces.html#id11">전자 제품</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id12"><strong>전자 제품 디자인</strong></a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id13"><strong>전자공학 라이브러리</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/workspaces.html#id14">제너레이티브 디자인 작업공간</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id15"><strong>정의 탭</strong></a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id16">모형 편집 상황별 환경</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id17">탐색 상황별 환경</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/workspaces.html#id18">렌더 작업공간</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id19">시뮬레이션 작업공간</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id20">설정 탭</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id21">결과 탭</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id22">단순화 상황별 환경</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id23">비교 상황별 환경</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/workspaces.html#id24">제조 작업공간</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id25">밀링 탭</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id26">터닝 탭</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id27">적층 탭</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id28">검사 탭</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id29">제작 탭</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id30">유틸리티 탭</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/workspaces.html#id31">도면 작업공간</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id32">제목 블록 상황별 환경</a></li>
+<li class="toctree-l5"><a class="reference internal" href="Tour_the_interface/workspaces.html#id33">경계 상황별 환경</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tour_the_interface/learning_pannel.html">학습 패널</a></li>
+<li class="toctree-l3"><a class="reference internal" href="Tour_the_interface/home_tab.html">홈 탭</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/home_tab.html#home">Home 탭 액세스</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/home_tab.html#fusion-360">Fusion 360에서 팀 간 전환</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/home_tab.html#id2">전환기에 대한 상황별 컨트롤에 액세스</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/home_tab.html#id3">프로젝트 열기 또는 작성</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/home_tab.html#fusion-360-manage-extension">최근 데이터, 프로젝트 또는 사용 가능한 경우 Fusion 360 Manage Extension 확인</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/home_tab.html#id4">리스트 뷰와 그리드 뷰 간 전환</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/home_tab.html#id5">프로젝트 정렬</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/home_tab.html#id6">선택한 구성요소의 특성 표시</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="Tour_the_interface/making_menu.html">표식 메뉴</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/making_menu.html#id2">첫 번째 수준 방사형 메뉴</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/making_menu.html#id3">두 번째 수준 방사형 메뉴</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/making_menu.html#id4">상황에 맞는 메뉴</a></li>
+<li class="toctree-l4"><a class="reference internal" href="Tour_the_interface/making_menu.html#id5">제스처</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="create_your_first_project/create_your_first_project.html">첫 번째 프로젝트 작성</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="create_your_first_project/create_your_first_project.html#id2">데이터 패널을 사용하여 새 프로젝트 작성</a></li>
+<li class="toctree-l2"><a class="reference internal" href="create_your_first_project/create_your_first_project.html#id3">새 디자인을 저장할 때 새 프로젝트 작성</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="create_your_first_project/learn_the_basics.html">기본 사항 학습</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/learn_the_basics.html#id2">새 디자인 작성</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/learn_the_basics.html#id3">데이터 패널 표시</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/learn_the_basics.html#id4">브라우저 사용</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/learn_the_basics.html#id5">타임라인 사용</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/learn_the_basics.html#id6">작업공간 변경</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="create_your_first_project/navigation.html">탐색</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/navigation.html#id2">마우스</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/navigation.html#viewcube">ViewCube</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/navigation.html#id3">명명된 뷰</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/navigation.html#id4">탐색 막대</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="create_your_first_project/navigation.html#id5">화면표시 설정</a></li>
+<li class="toctree-l5"><a class="reference internal" href="create_your_first_project/navigation.html#id6">그리드 및 스냅</a></li>
+<li class="toctree-l5"><a class="reference internal" href="create_your_first_project/navigation.html#id7">뷰포트</a></li>
+<li class="toctree-l5"><a class="reference internal" href="create_your_first_project/navigation.html#mac">Mac 트랙패드</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="create_your_first_project/start_your_design.html">디자인 시작</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/start_your_design.html#id2">활성 프로젝트 설정</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/start_your_design.html#id3">새 디자인 작성 및 저장</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/start_your_design.html#id4">상자 작성</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/start_your_design.html#id5">상자의 모서리 둥글게 하기</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/start_your_design.html#id6">상자에 구멍 추가</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/start_your_design.html#id7">디자인을 닫았다가 다시 여십시오.</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/start_your_design.html#id8">브라우저 사용</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/start_your_design.html#id9">타임라인 사용</a></li>
+<li class="toctree-l4"><a class="reference internal" href="create_your_first_project/start_your_design.html#id10">작업공간 변경</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html">환경 사용자화</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id2">도구막대 수정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id3">기본 설정</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id4">키보드 바로 가기</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id5">기존 키보드 바로 가기 변경</a></li>
+<li class="toctree-l3"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id6">새 키보드 바로 가기 지정</a></li>
+<li class="toctree-l3"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id7">키보드 단축키를 기본값으로 재설정</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id8">도구 상자</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id9">도구상자에 명령 추가</a></li>
+<li class="toctree-l3"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id10">도구상자에서 명령 제거</a></li>
+<li class="toctree-l3"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id11">도구상자의 명령에 액세스</a></li>
+<li class="toctree-l3"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id12">도구상자의 명령 검색</a></li>
+<li class="toctree-l3"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id13">검색하는 동안 도구상자에 명령 추가 또는 제거</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id14">디자인 작업공간</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id15">상황별 탭</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id16">마우스 오른쪽 버튼 클릭 메뉴</a></li>
+<li class="toctree-l2"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id17">궤도 중심</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="custiomize_your_experience/custiomize_yout_experience.html#id18">회전 중심 재설정</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="custiomize_your_experience/try_preview_features.html">미리보기 기능 사용해 보기</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="custiomize_your_experience/try_preview_features.html#fusion-360">Fusion 360에서 미리보기 기능 사용</a></li>
+<li class="toctree-l5"><a class="reference internal" href="custiomize_your_experience/try_preview_features.html#fusion-team">Fusion Team에서 미리보기 기능 사용</a></li>
+<li class="toctree-l5"><a class="reference internal" href="custiomize_your_experience/try_preview_features.html#id2">피드백 제공</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="custiomize_your_experience/extend_your_capability.html">기능 확장</a></li>
+<li class="toctree-l4"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html">전문 지식 습득</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html#fusion-360">Fusion 360에 대한 전문 지식 습득</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html#id2">절대 초보자를 위한 시작하기</a></li>
+<li class="toctree-l6"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html#solidworks">SolidWorks에서 전환</a></li>
+<li class="toctree-l6"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html#id3">기계 조립품</a></li>
+<li class="toctree-l6"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html#id4">제품 개발</a></li>
+<li class="toctree-l6"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html#id5">대안 테스트, 검증 및 탐색</a></li>
+<li class="toctree-l6"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html#cam">도구 경로 및 프로그래밍(CAM)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html#autodesk">Autodesk 교육 리소스</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html#id6">Fusion 360 커뮤니티에 가입</a></li>
+<li class="toctree-l5"><a class="reference internal" href="custiomize_your_experience/build_your_expertise.html#id7">기본 교육 프로젝트 액세스</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="../../index.html" title="이전 페이지">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">이전</p>
+            <p class="prev-next-title">Welcome to fusion360-docs’s documentation!</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="getting_started_with_fusion_360.html" title="다음 페이지">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">다음</p>
+        <p class="prev-next-title">Fusion 360 시작하기</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By leehyungjin<br/>
+  
+      &copy; Copyright 2022, leehyungjin.<br/>
+    Last updated on 2022년 07월 31일.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

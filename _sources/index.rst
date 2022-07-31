@@ -5,10 +5,10 @@
 
 Welcome to fusion360-docs's documentation!
 ==========================================
-
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+   :maxdepth: 1
+   
+   fusion_docs/get_started_in_fusion_360/index
 
 
 

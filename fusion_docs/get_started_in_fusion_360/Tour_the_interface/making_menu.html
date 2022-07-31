@@ -1,0 +1,558 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>표식 메뉴 &#8212; Fusion360 Docs</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../_static/translations.js"></script>
+    <link rel="index" title="색인" href="../../../genindex.html" />
+    <link rel="search" title="검색" href="../../../search.html" />
+    <link rel="next" title="첫 번째 프로젝트 작성" href="../create_your_first_project/create_your_first_project.html" />
+    <link rel="prev" title="홈 탭" href="home_tab.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ko">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Fusion360 Docs</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../index.html">
+   Fusion 360 시작하기
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../getting_started_with_fusion_360.html">
+     Fusion 360 시작하기
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../access_fusion_360/access_fusion_360.html">
+     액세스 Fusion 360
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../access_fusion_360/download_fusion_360.html">
+       다운로드 Fusion 360
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../access_fusion_360/verify_access_to_fusion_team.html">
+       Fusion Team에 대한 액세스 권한 확인
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../access_fusion_360/basic_access.html">
+       기본 액세스
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="tour_the_interface.html">
+     인터페이스 둘러보기
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="data_Panel.html">
+       데이터 패널
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="workspaces.html">
+       작업공간
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="learning_pannel.html">
+       학습 패널
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="home_tab.html">
+       홈 탭
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       표식 메뉴
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../create_your_first_project/create_your_first_project.html">
+     첫 번째 프로젝트 작성
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../create_your_first_project/learn_the_basics.html">
+       기본 사항 학습
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../create_your_first_project/navigation.html">
+       탐색
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../create_your_first_project/start_your_design.html">
+       디자인 시작
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../custiomize_your_experience/custiomize_yout_experience.html">
+     환경 사용자화
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../custiomize_your_experience/try_preview_features.html">
+       미리보기 기능 사용해 보기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../custiomize_your_experience/extend_your_capability.html">
+       기능 확장
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../custiomize_your_experience/build_your_expertise.html">
+       전문 지식 습득
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/fusion_docs/get_started_in_fusion_360/Tour_the_interface/making_menu.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   첫 번째 수준 방사형 메뉴
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   두 번째 수준 방사형 메뉴
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   상황에 맞는 메뉴
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   제스처
+  </a>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>표식 메뉴</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id2">
+   첫 번째 수준 방사형 메뉴
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+   두 번째 수준 방사형 메뉴
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+   상황에 맞는 메뉴
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id5">
+   제스처
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="id1">
+<h1>표식 메뉴<a class="headerlink" href="#id1" title="이 표제에 대한 퍼머링크">#</a></h1>
+<p><strong>표식</strong> 메뉴는 자주 사용하는 명령에 신속하게 액세스할 수 있는 방사형 메뉴입니다.</p>
+<p>캔버스의 아무 곳이나 마우스 오른쪽 버튼으로 클릭하면 커서 주위에 표식 메뉴가 나타납니다.</p>
+<p>명령을 활성화하려면 명령 방향으로 커서를 끈 다음 강조 표시된 쐐기의 아무 곳이나 클릭합니다.</p>
+<p><strong>표식</strong> 메뉴를 닫으려면 메뉴 가운데 내부를 클릭하거나 메뉴 외부를 클릭하거나 Esc 키를 누릅니다.</p>
+<p><strong>표식</strong> 메뉴는 다음과 같은 3개 섹션으로 나뉩니다.</p>
+<ul class="simple">
+<li><p>첫 번째 수준 방사형 메뉴</p></li>
+<li><p>두 번째 수준 방사형 메뉴</p></li>
+<li><p>상황에 맞는 메뉴</p></li>
+</ul>
+<section id="id2">
+<h2>첫 번째 수준 방사형 메뉴<a class="headerlink" href="#id2" title="이 표제에 대한 퍼머링크">#</a></h2>
+<p>첫 번째 수준 방사형 메뉴에는 자주 사용하는 명령이 포함되어 있습니다.</p>
+<p><strong>디자인</strong> 작업공간의 첫 번째 단계 반지름 메뉴에는 다음과 같은 8개의 기본 명령이 있습니다.</p>
+<ul class="simple">
+<li><p>마지막 반복 명령</p></li>
+<li><p>밀고 당기기</p></li>
+<li><p>명령복구</p></li>
+<li><p>구멍</p></li>
+<li><p>스케치</p></li>
+<li><p>이동/복사</p></li>
+<li><p>명령취소</p></li>
+<li><p>삭제
+<strong>작업공간, 도구막대 탭, 상황별 환경 및 활성 명령</strong>
+<strong>표식</strong> 메뉴에 나타나는 명령은 각 작업공간, 도구막대 탭, 상황별 환경 및 활성 명령에 따라 변경됩니다.</p></li>
+</ul>
+<p>예:</p>
+<ul class="simple">
+<li><p><strong>디자인</strong> 작업공간에서 곡면 탭으로 전환하면 <strong>구멍</strong> 명령이 <strong>패치</strong>로 대치됩니다.</p></li>
+<li><p><strong>판금</strong> 탭으로 전환하면 <strong>플랜지</strong> 명령이 대신 나타납니다.</p></li>
+<li><p><strong>자유형</strong> 상황별 환경에는 <strong>자유형 편집</strong> 및 <strong>면</strong> 명령이 표시됩니다.</p></li>
+<li><p><strong>제너레이티브 디자인</strong> 작업공간에는 제너레이티브 학습 설정을 도와주는 명령이 표시됩니다.</p></li>
+<li><p><strong>렌더</strong> 작업공간에는 모양, 텍스처, 장면 및 렌더링과 관련된 명령이 표시됩니다.</p></li>
+<li><p><strong>애니메이션</strong> 작업공간에는 애니메이션을 설정하고 공유하는 데 도움이 되는 명령이 표시됩니다.</p></li>
+<li><p><strong>시뮬레이션</strong> 작업공간에는 시뮬레이션 학습을 설정하는 데 도움이 되는 명령이 표시됩니다.</p></li>
+<li><p><strong>제조</strong> 작업공간은 <strong>반복, 명령취소, 다시 실행</strong> 및 <strong>가져오기</strong>로 제한되지만, 도구 경로를 설정하고 관리하기 위한 보다 광범위한 상황에 맞는 메뉴를 표시합니다.</p></li>
+<li><p><strong>도면</strong> 작업공간에는 디자인을 문서화하고 주석을 추가하는 데 도움이 되는 명령과 상황에 맞는 메뉴의 주석 도구가 표시됩니다.</p></li>
+</ul>
+</section>
+<section id="id3">
+<h2>두 번째 수준 방사형 메뉴<a class="headerlink" href="#id3" title="이 표제에 대한 퍼머링크">#</a></h2>
+<p>첫 번째 수준 방사형 메뉴에서 커서를 하단 명령 위로 이동하면 커서 주위에 두 번째 수준 방사형 메뉴가 표시됩니다.</p>
+<p>두 번째 단계 반지름 메뉴에는 다음과 같은 8개의 기본 <strong>스케치</strong> 명령이 표시됩니다.</p>
+<ul class="simple">
+<li><p>스케치 마무리</p></li>
+<li><p>2점 직사각형</p></li>
+<li><p>맞춤점 스플라인</p></li>
+<li><p>프로젝트</p></li>
+<li><p>선</p></li>
+<li><p>간격띄우기</p></li>
+<li><p>스케치 치수</p></li>
+<li><p>중심 지름 원
+두 번째 수준의 방사형 메뉴에서 <strong>스케치</strong> 명령에 액세스하는 경우 작업 속도를 크게 향상시킬 수 있습니다.</p></li>
+</ul>
+<p>첫 번째 수준 방사형 메뉴로 돌아가려면 커서를 위쪽 화살표 위로 이동합니다.</p>
+</section>
+<section id="id4">
+<h2>상황에 맞는 메뉴<a class="headerlink" href="#id4" title="이 표제에 대한 퍼머링크">#</a></h2>
+<p>상황에 맞는 메뉴가 방사형 메뉴 아래에 나타나며 여기에는 다음이 포함됩니다.</p>
+<ul class="simple">
+<li><p>이동, 줌 및 궤도와 같은 탐색 컨트롤</p></li>
+<li><p>분리/분리해제</p></li>
+<li><p>전환을 쉽게 해주는 작업공간 리스트</p></li>
+<li><p>저장된 바로 가기 키
+명령을 활성화하려면 상황에 맞는 메뉴에서 선택합니다.</p></li>
+</ul>
+</section>
+<section id="id5">
+<h2>제스처<a class="headerlink" href="#id5" title="이 표제에 대한 퍼머링크">#</a></h2>
+<p><strong>표식</strong> 메뉴에서 자주 사용하는 명령의 위치를 외우기를 시작할 때 전체 <strong>표식</strong> 메뉴를 표시하지 않고 제스처를 사용하여 명령을 선택할 수 있습니다.</p>
+<p>제스처는 방사형 메뉴에 나타나는 모든 명령에 대해 작동합니다.</p>
+<p>명령이 활성 상태일 때 제스처를 사용하여 <strong>확인</strong> 및 <strong>취소</strong>와 같은 상황별 명령을 선택할 수도 있습니다.</p>
+<p>이 기능은 <strong>스케치</strong> 두 번째 단계 방사형 메뉴에 특히 유용합니다.</p>
+<p><strong>스케치</strong> 명령에 액세스하려면 먼저 마우스 오른쪽 버튼을 클릭하고 누른 상태로 아래로 끈 다음, 명령이 <strong>스케치</strong> 두 번째 단계 반지름 메뉴에 나타나는 방향으로 끕니다.</p>
+<p>예:</p>
+<ul class="simple">
+<li><p>2점 직사각형: 아래로 끈 다음 오른쪽 위로 끕니다.</p></li>
+<li><p>맞춤점 스플라인: L자형 안쪽으로 끕니다.</p></li>
+<li><p>선: 직선 아래로 끕니다.</p></li>
+<li><p>간격띄우기: 왼쪽 아래로 끕니다.</p></li>
+<li><p>스케치 마무리: 아래로 끈 다음 중간 정도 위로 끕니다.</p></li>
+<li><p>명령 내에서 마우스 오른쪽 버튼을 클릭한 상태로 오른쪽으로 빠르게 드래그합니다.</p></li>
+</ul>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="home_tab.html" title="이전 페이지">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">이전</p>
+            <p class="prev-next-title">홈 탭</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../create_your_first_project/create_your_first_project.html" title="다음 페이지">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">다음</p>
+        <p class="prev-next-title">첫 번째 프로젝트 작성</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By leehyungjin<br/>
+  
+      &copy; Copyright 2022, leehyungjin.<br/>
+    Last updated on 2022년 07월 31일.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
