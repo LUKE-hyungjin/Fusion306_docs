@@ -9,7 +9,10 @@ Welcome to fusion360-docs's documentation!
    :maxdepth: 1
    
    fusion_docs/get_started_in_fusion_360/index
-
+   fusion_docs/what's_new/what's_new
+   fusion_docs/collaborate_with_fusion_team/collaborate_with_fusion_team
+   fusion_docs/extensions/extensions
+   fusion_docs/assemblie/index.md
 
 
 Indices and tables

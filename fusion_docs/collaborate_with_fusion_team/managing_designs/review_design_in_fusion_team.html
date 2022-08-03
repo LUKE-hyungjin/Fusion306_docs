@@ -1,0 +1,1512 @@
+
+<!DOCTYPE html>
+
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Fusion Team에서 디자인 검토 &#8212; Fusion360 KR</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../../_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="../../../_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../../../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../../../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="../../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../../_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="../../../" id="documentation_options" src="../../../_static/documentation_options.js"></script>
+    <script src="../../../_static/jquery.js"></script>
+    <script src="../../../_static/underscore.js"></script>
+    <script src="../../../_static/doctools.js"></script>
+    <script src="../../../_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script src="../../../_static/translations.js"></script>
+    <link rel="index" title="색인" href="../../../genindex.html" />
+    <link rel="search" title="검색" href="../../../search.html" />
+    <link rel="next" title="Fusion Team에서 데이터 삭제" href="delete_data_in_fusion_team.html" />
+    <link rel="prev" title="디자인 구성요소 보기" href="view_design_components.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="ko">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../../../index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">Fusion360 KR</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../../../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="current nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../get_started_in_fusion_360/index.html">
+   Fusion 360 시작하기
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../get_started_in_fusion_360/getting_started_with_fusion_360.html">
+     Fusion 360 시작하기
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../get_started_in_fusion_360/access_fusion_360/access_fusion_360.html">
+     액세스 Fusion 360
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+    <label for="toctree-checkbox-2">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/access_fusion_360/download_fusion_360.html">
+       다운로드 Fusion 360
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/access_fusion_360/verify_access_to_fusion_team.html">
+       Fusion Team에 대한 액세스 권한 확인
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/access_fusion_360/basic_access.html">
+       기본 액세스
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../get_started_in_fusion_360/Tour_the_interface/tour_the_interface.html">
+     인터페이스 둘러보기
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+    <label for="toctree-checkbox-3">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/Tour_the_interface/data_Panel.html">
+       데이터 패널
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/Tour_the_interface/workspaces.html">
+       작업공간
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/Tour_the_interface/learning_pannel.html">
+       학습 패널
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/Tour_the_interface/home_tab.html">
+       홈 탭
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/Tour_the_interface/making_menu.html">
+       표식 메뉴
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../get_started_in_fusion_360/create_your_first_project/create_your_first_project.html">
+     첫 번째 프로젝트 작성
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+    <label for="toctree-checkbox-4">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/create_your_first_project/learn_the_basics.html">
+       기본 사항 학습
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/create_your_first_project/navigation.html">
+       탐색
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/create_your_first_project/start_your_design.html">
+       디자인 시작
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../get_started_in_fusion_360/custiomize_your_experience/custiomize_yout_experience.html">
+     환경 사용자화
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+    <label for="toctree-checkbox-5">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/custiomize_your_experience/try_preview_features.html">
+       미리보기 기능 사용해 보기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/custiomize_your_experience/extend_your_capability.html">
+       기능 확장
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../get_started_in_fusion_360/custiomize_your_experience/build_your_expertise.html">
+       전문 지식 습득
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../what%27s_new/what%27s_new.html">
+   새로운 기능
+  </a>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="../collaborate_with_fusion_team.html">
+   Fusion Team으로 공동작업
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../work_on_project_with_people_in_a_team.html">
+     팀원들과 함께 프로젝트 작업 진행
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../fusion_team/fusion_team.html">
+     Fusion Team
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+    <label for="toctree-checkbox-7">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../fusion_team/create_a_fusion_team.html">
+       Fusion Team 작성
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../fusion_team/open_fusion_team.html">
+       Fusion Team 열기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../fusion_team/navigate_within_fusion_team.html">
+       Fusion Team 내에서 탐색
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../fusion_team/switch_between_teams.html">
+       팀 간 전환
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../fusion_team/leave_a_fusion_team.html">
+       Fusion Team 나가기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../fusion_team/administer_your_fusion_team.html">
+       Fusion Team 관리
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../fusion_team/administer_team_members_and_roles.html">
+       팀 멤버 및 역할 관리
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../fusion_team/manage_your_autodesk_account.html">
+       Autodesk Account 계정 관리
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../projects/projects.html">
+     프로젝트
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+    <label for="toctree-checkbox-8">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../projects/create_project.html">
+       프로젝트 작성
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../projects/create_rename_delete_project_folder.html">
+       프로젝트 폴더 작성, 이름바꾸기 및 삭제
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../projects/edit_project_detail.html">
+       프로젝트 상세 정보 편집
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../projects/join_and_leave_projects.html">
+       프로젝트 참여 및 나가기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../projects/manage_people_in_project.html">
+       프로젝트의 사용자 관리
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../projects/manage_people_with_educational_access.html">
+       교육용 액세스 권한이 있는 사용자 관리
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../projects/organize_and_find_project.html">
+       프로젝트 구성 및 찾기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../projects/track_project_activity.html">
+       프로젝트 작업 추적
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../projects/transfer_projects.html">
+       프로젝트 전송
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../projects/archive_restore_delete_project.html">
+       프로젝트 보관, 복원 및 삭제
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 current active has-children">
+    <a class="reference internal" href="managing_design.html">
+     디자인 관리
+    </a>
+    <input checked="" class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+    <label for="toctree-checkbox-9">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul class="current">
+     <li class="toctree-l3">
+      <a class="reference internal" href="supported_file_formats.html">
+       지원되는 파일 형식
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="upload_designs_in_fusion_team.html">
+       Fusion Team에서 디자인 업로드
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="copy_move_remove_designs_in_fusion_team.html">
+       Fusion Team에서 디자인 복사, 이동 및 이름바꾸기
+      </a>
+     </li>
+     <li class="toctree-l3 has-children">
+      <a class="reference internal" href="milestones_and_version/milestones_and_version.html">
+       마일스톤 및 버전
+      </a>
+      <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+      <label for="toctree-checkbox-10">
+       <i class="fas fa-chevron-down">
+       </i>
+      </label>
+      <ul>
+       <li class="toctree-l4">
+        <a class="reference internal" href="milestones_and_version/create_milestones.html">
+         마일스톤 작성
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="milestones_and_version/edit_milestones.html">
+         마일스톤 편집
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="milestones_and_version/promote_milestones.html">
+         마일스톤 승격
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="milestones_and_version/choose_milestone.html">
+         마일스톤 선택
+        </a>
+       </li>
+       <li class="toctree-l4">
+        <a class="reference internal" href="milestones_and_version/work_with_version_in_the_history_dialog.html">
+         내역 대화상자에서 버전 작업
+        </a>
+       </li>
+      </ul>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="edit_design.html">
+       디자인 편집
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="export_designs_in_fusion_team.html">
+       Fusion Team에서 디자인 내보내기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="share_designs_from_fusion_team.html">
+       Fusion Team에서 디자인 공유
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="view_design_in_fusion_team.html">
+       Fusion Team에서 디자인 보기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="view_design_components.html">
+       디자인 구성요소 보기
+      </a>
+     </li>
+     <li class="toctree-l3 current active">
+      <a class="current reference internal" href="#">
+       Fusion Team에서 디자인 검토
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="delete_data_in_fusion_team.html">
+       Fusion Team에서 데이터 삭제
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="restore_data_in_fusion_team.html">
+       Fusion Team에서 데이터 복원
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="permanently_delete_data_in_fusion_team.html">
+       Fusion Team에서 영구적으로 데이터 삭제
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../extensions/extensions.html">
+   익스텐션
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../extensions/extensions_in_fusion_360/extensions_in_fusion_360.html">
+     Fusion 360의 익스텐션
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+    <label for="toctree-checkbox-12">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../extensions/extensions_in_fusion_360/product_design.html">
+       Product Design Extension
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../extensions/extensions_in_fusion_360/generative_design.html">
+       Fusion 360의 익스텐션
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../extensions/extensions_in_fusion_360/simulation.html">
+       시뮬레이션 Extension
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../extensions/extensions_in_fusion_360/machining.html">
+       기계가공 Extension
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../extensions/extensions_in_fusion_360/additive_build.html">
+       Additive Build Extension
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../extensions/extensions_in_fusion_360/nesting_fabrication.html">
+       Nesting &amp; Fabrication Extension
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../extensions/extensions_in_fusion_360/manage.html">
+       Manage Extension
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../extensions/start_7day_free_trial.html">
+     익스텐션 7일 무료 체험판 시작
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../extensions/ways_to_acess_extensions.html">
+     익스텐션에 액세스하는 방법
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../extensions/purchase_access.html">
+     익스텐션 액세스 권한 구매
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../assemblie/index.html">
+   조립품
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../assemblie/assemblie.html">
+     조립품
+    </a>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../assemblie/modeling_modes/modeling_modes.html">
+     Fusion 360의 모델링 모드
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+    <label for="toctree-checkbox-14">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/modeling_modes/switch_a_design_to_direct_modeling_mode.html">
+       디자인을 파라메트릭 모델링 모드로 전환
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/modeling_modes/switch_a_design_to_parametric_modeling_mode.html">
+       디자인을 직접 모델링 모드로 전환
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/modeling_modes/adjust_design_history_preference_for_new_designs.html">
+       새 디자인에 대한 디자인 히스토리 기본 설정 조정
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../assemblie/timeline/timeline.html">
+     Fusion 360의 타임라인
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+    <label for="toctree-checkbox-15">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/timeline/use_the_timeline.html">
+       타임라인 사용
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../assemblie/designs/designs.html">
+     디자인
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+    <label for="toctree-checkbox-16">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/create_and_save_new_design.html">
+       새 디자인 작성 및 저장
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/save_versions_of_designs.html">
+       디자인 버전 저장
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/open_designs.html">
+       디자인 열기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/insert_design.html">
+       디자인 삽입
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/upload_design.html">
+       디자인 업로드
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/update_design.html">
+       디자인 업데이트
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/open_older_versions_of_designs.html">
+       이전 버전의 디자인 열기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/add_commments_to_designs.html">
+       디자인에 주석 추가
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/share_design.html">
+       디자인 공유
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/export_design.html">
+       디자인 내보내기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/copy_move_and_rename_design.html">
+       디자인 복사, 이동 및 이름바꾸기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/delete_design.html">
+       디자인 삭제
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/offline_mode.html">
+       오프라인 모드
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/cache_design_folders_and_projects.html">
+       디자인, 폴더 및 프로젝트 캐시
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/recover_design.html">
+       디자인 복구
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/open_designs_create_in_order_cad_applications.html">
+       다른 CAD 응용프로그램에서 작성된 디자인 열기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/upload_designs_create_in_other_cad_applications.html">
+       다른 CAD 응용프로그램에서 작성된 디자인 업로드
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/insert_design_create_in_other_cad_applications.html">
+       다른 CAD 응용프로그램에서 작성된 디자인 삽입
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/designs/design_not_yet_available_reference.html">
+       디자인을 아직 사용할 수 없음 참조
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../assemblie/design_reservation/design_reservation.html">
+     디자인 예약
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-17" name="toctree-checkbox-17" type="checkbox"/>
+    <label for="toctree-checkbox-17">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/design_reservation/enable_design_reservation.html">
+       디자인 예약 사용
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/design_reservation/determine_who_is_editing_a_design.html">
+       디자인을 편집 중인 사용자 결정
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/design_reservation/make_a_design_temporarily_read_only.html">
+       임시로 디자인을 읽기 전용으로 만들기
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../assemblie/assemblies/assemblies.html">
+     조립품
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-18" name="toctree-checkbox-18" type="checkbox"/>
+    <label for="toctree-checkbox-18">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/assemblies/edit_a_desing.html">
+       디자인 편집
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/assemblies/edit_in_place.html">
+       내부 편집
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/assemblies/adjust_visibility_of_objects_in_an_assembly.html">
+       조립품에서 객체의 가시성 조정
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/assemblies/update_components_in_an_assembly.html">
+       조립품에 구성요소 업데이트
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/assemblies/save_a_version_of_a_design_as_the_latest_version.html">
+       디자인 버전을 최신 버전으로 저장
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/assemblies/derived_design_features.html">
+       파생 디자인 피쳐
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/assemblies/break_the_link_between_an_external_component_and_the_assembly.html">
+       외부 구성요소와 조립품 사이의 링크 끊기
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../assemblie/components/components.html">
+     구성요소
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-19" name="toctree-checkbox-19" type="checkbox"/>
+    <label for="toctree-checkbox-19">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/bodies.html">
+       바디
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/create_new_components.html">
+       새 구성요소 작성
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/activate_a_component.html">
+       조립품에서 구성요소 활성화
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/edit_internal_components.html">
+       내부 구성요소 편집
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/replace_external_components.html">
+       외부 구성요소 대체
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/copy_and_reuse_components.html">
+       구성요소 복사 및 재사용
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/capture_or_revert_position_of_components.html">
+       구성요소 위치 캡처 또는 되돌리기
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/position_bodies_and_components.html">
+       바디 및 구성요소 배치
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/visibility_of_components.html">
+       구성요소의 가시성
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/effects_of_assembly_structure.html">
+       조립품 구조의 효과
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/resolve_external_components.html">
+       외부 구성요소 해석
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/circular_references.html">
+       순환 참조
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/new_component_reference.html">
+       새 구성요소 참조
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/components/revert_reference.html">
+       참조 되돌리기
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../assemblie/joints/joints.html">
+     접합
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-20" name="toctree-checkbox-20" type="checkbox"/>
+    <label for="toctree-checkbox-20">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/joint_types.html">
+       접합 유형
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/joint_command.html">
+       접합 명령
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/as_build_joints.html">
+       현재 위치에서 접합
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/joint_origin.html">
+       접합 원점
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/edit_joints.html">
+       접합 편집
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/joint_limits.html">
+       접합 제한
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/insert_a_subassembly_and_create_joints.html">
+       부분조립품 삽입 및 접합 작성
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/create_trangent_relationship.html">
+       접선 관계 작성
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/drive_joint_reference.html">
+       접합 구동 참조
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/motion_link_reference.html">
+       모션 링크 참조
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/joints/rigid_grops.html">
+       강체 그룹
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../assemblie/contact_sets/contact_sets.html">
+     접촉 세트
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-21" name="toctree-checkbox-21" type="checkbox"/>
+    <label for="toctree-checkbox-21">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/contact_sets/create_contract_sets.html">
+       접촉 세트 작성
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../assemblie/motion_studies/motion_studies.html">
+     동작 학습
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-22" name="toctree-checkbox-22" type="checkbox"/>
+    <label for="toctree-checkbox-22">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/motion_studies/motion_study_reference.html">
+       모션 스터디 참조
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toctree-l2 has-children">
+    <a class="reference internal" href="../../assemblie/tutorials/tutorials.html">
+     튜토리얼
+    </a>
+    <input class="toctree-checkbox" id="toctree-checkbox-23" name="toctree-checkbox-23" type="checkbox"/>
+    <label for="toctree-checkbox-23">
+     <i class="fas fa-chevron-down">
+     </i>
+    </label>
+    <ul>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/tutorials/tutorial_Top-down_design_method_of_assembly.html">
+       튜토리얼: 하향식 조립품 디자인 방법
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/tutorials/tutorial_manually_adding_joints.html">
+       튜토리얼: 수동으로 접합 추가
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/tutorials/tutorial_Working_with_subassemblies_and_As-built_joints.html">
+       튜토리얼: 부분조립품 및 현재 위치에서 접합 작업
+      </a>
+     </li>
+     <li class="toctree-l3">
+      <a class="reference internal" href="../../assemblie/tutorials/tutorial_enabling_motion_using_joints_and_contact_sets.html">
+       튜토리얼: 접합 및 접촉 세트를 사용하여 동작 활성화
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="../../../_sources/fusion_docs/collaborate_with_fusion_team/managing_designs/review_design_in_fusion_team.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Fusion Team에서 디자인에 주석 지정
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     디자인에 주석 지정
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       디자인의 특정 측면에 주석 지정
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       점에 주석 지정
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       객체에 주석 지정
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   주석 보기
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     주석에 응답
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     주석 삭제
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   공유 디자인에 표식 지정
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     표식 편집
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     표식 검토
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#d">
+     표식이 지정된 2D 파일 보기
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id12">
+       표식이 지정된 2D 파일에 표식을 추가
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Fusion Team에서 디자인 검토</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+   Fusion Team에서 디자인에 주석 지정
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     디자인에 주석 지정
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       디자인의 특정 측면에 주석 지정
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       점에 주석 지정
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       객체에 주석 지정
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id6">
+   주석 보기
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+     주석에 응답
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     주석 삭제
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+   공유 디자인에 표식 지정
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+     표식 편집
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+     표식 검토
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#d">
+     표식이 지정된 2D 파일 보기
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id12">
+       표식이 지정된 2D 파일에 표식을 추가
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <section id="fusion-team">
+<h1>Fusion Team에서 디자인 검토<a class="headerlink" href="#fusion-team" title="이 표제에 대한 퍼머링크">#</a></h1>
+<p>Fusion Team에서 디자인을 검토하는 방법을 알아봅니다.</p>
+<section id="id1">
+<h2>Fusion Team에서 디자인에 주석 지정<a class="headerlink" href="#id1" title="이 표제에 대한 퍼머링크">#</a></h2>
+<p>Fusion Team에는 디자인 검토를 도와주는 두 가지 옵션이 있습니다. 팀 외부의 공동작업자와 디자인에 대한 링크를 공유할 수 있습니다. 팀 멤버는 Fusion Team 내에서 직접 디자인에 주석을 지정할 수 있습니다.</p>
+<p>주석을 지정할 경우 디자인 뷰의 스냅샷이 주석에 자동으로 추가됩니다. 주석을 달기 전에 디자인 뷰를 조정할 수 있습니다. 스냅샷을 주석의 일부로 포함하지 않으려면 삭제할 수 있습니다.</p>
+<section id="id2">
+<h3>디자인에 주석 지정<a class="headerlink" href="#id2" title="이 표제에 대한 퍼머링크">#</a></h3>
+<ol class="arabic">
+<li><p>뷰어의 상단 탐색 막대에서 <strong>주석</strong> 아이콘 <img alt="주석 아이콘" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-Import/images/icon-comment.png" />을 클릭합니다.</p>
+<ul class="simple">
+<li><p>또는 개요 페이지에서 <strong>주석 추가</strong>를 클릭합니다.</p></li>
+</ul>
+</li>
+<li><p>디자인 뷰를 조정하거나 스냅샷을 업데이트하거나 스냅샷을 삭제합니다.</p>
+<p><img alt="주석 포함 스냅샷" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-Import/images/comment-snapshot.png" /></p>
+</li>
+<li><p>주석을 추가하고 <strong>게시</strong>를 클릭합니다.</p></li>
+</ol>
+<p>팁: 특정 사람이 주석을 보게 하려면 해당 사람의 이름 뒤에 &#64;멘션을 사용합니다.</p>
+<section id="id3">
+<h4>디자인의 특정 측면에 주석 지정<a class="headerlink" href="#id3" title="이 표제에 대한 퍼머링크">#</a></h4>
+<p>디자인의 특정 부품에 주석을 지정하려면 <strong>객체에 주석 지정</strong> 및 <strong>점에 주석 지정</strong> 도구를 사용합니다.</p>
+<p><img alt="점 및 객체에 주석 지정" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-Import/images/comment-on.png" /></p>
+</section>
+<section id="id4">
+<h4>점에 주석 지정<a class="headerlink" href="#id4" title="이 표제에 대한 퍼머링크">#</a></h4>
+<p>점에 주석을 지정하려면:</p>
+<ol class="arabic simple">
+<li><p>뷰어 도구에서 <strong>주석</strong> 아이콘을 클릭하고 <strong>점에 주석 지정</strong>을 선택합니다.</p></li>
+<li><p>파란색 안내선을 주석을 추가할 디자인의 점으로 끕니다.</p></li>
+<li><p>클릭하여 점을 놓습니다.</p>
+<ul class="simple">
+<li><p>해당 점에 표식기가 추가되고 주석 상자가 열립니다.</p></li>
+</ul>
+</li>
+<li><p>점 위치를 바꾸려면 안내선을 새 점으로 끕니다.</p></li>
+<li><p>주석 상자에 주석을 입력합니다.</p></li>
+<li><p><strong>게시</strong>를 클릭합니다.</p></li>
+</ol>
+</section>
+<section id="id5">
+<h4>객체에 주석 지정<a class="headerlink" href="#id5" title="이 표제에 대한 퍼머링크">#</a></h4>
+<p>이 도구는 모형 내의 특정 객체에 주의를 끌려는 경우에 사용하면 좋습니다. 예를 들어 객체의 특성에 대해 질문이 있을 수 있습니다. 이 도구를 사용하여 객체를 선택하고 주석을 추가할 수 있습니다.</p>
+<ol class="arabic simple">
+<li><p>뷰어 도구에서 <strong>주석</strong> 아이콘을 클릭하고 <strong>객체에 주석 지정</strong>을 선택합니다.</p></li>
+<li><p>주석을 지정할 객체를 클릭합니다.</p>
+<ul class="simple">
+<li><p>해당 점에 표식기가 추가되고 주석 상자가 열립니다.</p></li>
+</ul>
+</li>
+<li><p>주석 상자에 주석을 입력합니다.</p></li>
+<li><p><strong>게시</strong>를 클릭합니다.</p></li>
+</ol>
+</section>
+</section>
+</section>
+<section id="id6">
+<h2>주석 보기<a class="headerlink" href="#id6" title="이 표제에 대한 퍼머링크">#</a></h2>
+<p>주석 패널에서 모든 주석을 볼 수 있습니다. 상단 탐색 막대의 <strong>주석</strong>을 클릭하여 주석을 볼 수 있습니다.</p>
+<p>점 및 객체에 대한 주석은 뷰어 캔버스에서 파란색 핀으로 표시됩니다. 이러한 표식기를 표시하거나 숨길 수 있습니다.</p>
+<p>뷰어 캔버스에서 점 및 객체에 있는 주석의 표식기를 보려면 뷰어 도구막대에서 <strong>표식기 표시</strong>를 클릭합니다.</p>
+<p><img alt="표식기 표시" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-Import/images/show-markers.png" /></p>
+<p>표식기 위로 마우스를 가져가면 주석이 표시됩니다.</p>
+<section id="id7">
+<h3>주석에 응답<a class="headerlink" href="#id7" title="이 표제에 대한 퍼머링크">#</a></h3>
+<ol class="arabic simple">
+<li><p><strong>표식기</strong>를 클릭합니다.</p></li>
+<li><p>주석 아래의 <strong>응답</strong>을 클릭합니다.</p></li>
+<li><p>응답을 입력합니다.</p></li>
+<li><p><strong>게시</strong>를 클릭합니다.</p></li>
+</ol>
+<p><img alt="주석에 응답" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-Import/images/reply-to-comment.png" /></p>
+</section>
+<section id="id8">
+<h3>주석 삭제<a class="headerlink" href="#id8" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>주석을 삭제하려면 주석에서 <strong>삭제</strong>(휴지통) 아이콘을 클릭합니다.</p>
+</section>
+</section>
+<section id="id9">
+<h2>공유 디자인에 표식 지정<a class="headerlink" href="#id9" title="이 표제에 대한 퍼머링크">#</a></h2>
+<p>다른 사용자가 디자인에 대한 링크를 공유하는 경우 표식 도구를 사용하여 공유 디자인에 표식을 지정하고, 변경 사항 스냅샷을 저장하고, 피드백 스냅샷을 다른 사람과 공유할 수 있습니다.</p>
+<ol class="arabic simple">
+<li><p>공유 링크를 클릭하여 뷰어에서 디자인을 엽니다.</p></li>
+<li><p>뷰어 도구에서 <strong>표식</strong> 아이콘 <img alt="표식 아이콘" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-Import/images/icon-markup.png" />을 클릭합니다.</p></li>
+</ol>
+<p>주: Fusion Team에서 사용할 수 있는 표식 도구 일부를 공유 디자인에 사용할 수 있습니다.</p>
+<p>뷰어에는 디자인을 검토할 때 사용할 수 있는 표식 도구가 있습니다.</p>
+<p><strong>표식</strong>을 클릭하면 뷰어 영역이 <strong>표식 모드</strong>로 바뀌고, 표식을 저장하거나 취소할 때까지 이 모드가 유지됩니다. 표식을 주석으로 저장하면 관측점 스냅샷을 포함하게 되므로 디자인에 표식을 지정하는 정확한 상황을 다른 사람이 알 수 있습니다. 표식 모드 내에서는 다른 뷰어 도구를 사용할 수 없습니다. 표식을 클릭하기 전에 뷰어 도구를 사용하여 모형 또는 부품이 원하는 뷰로 표시되는지 확인하십시오.</p>
+<p>표식 도구막대에는 다음 유형의 도구가 포함됩니다.</p>
+<ul class="simple">
+<li><p>프리핸드</p></li>
+<li><p>선</p></li>
+<li><p>영역 선택</p></li>
+<li><p>인출선</p></li>
+<li><p>문자</p></li>
+</ul>
+<p>다음을 사용하여 이러한 도구의 스타일 및 형식을 변경할 수 있습니다.</p>
+<ul class="simple">
+<li><p>배경</p></li>
+<li><p>선 스타일</p></li>
+<li><p>문자 형식</p></li>
+</ul>
+<p><img alt="2017년 5월부터 모든 도구에 표식 지정" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-Import/images/markup-all-tools-may-2017.png" /></p>
+<p>이러한 도구를 사용하여 디자인의 모든 부품에 표식을 지정할 수 있습니다.</p>
+<p>그리기 도구를 사용하려면 옵션을 선택하고 설계 위의 아무 곳이나 클릭하여 그립니다. 표식을 저장하면 표식기가 디자인에 추가됩니다.</p>
+<p>콜아웃을 추가하려면 콜아웃 메뉴를 클릭하고 원하는 콜아웃 옵션을 선택합니다. 다음 콜아웃 옵션을 사용할 수 있습니다.</p>
+<ul class="simple">
+<li><p>점에 대한 문자</p></li>
+<li><p>직사각형 선택 항목에 대한 문자</p></li>
+<li><p>원형 선택 항목에 대한 문자</p></li>
+<li><p>클라우드 선택 항목에 대한 문자</p></li>
+<li><p>사용자 클라우드 선택 항목에 대한 문자</p></li>
+<li><p>폴리곤 선택 항목에 대한 문자</p></li>
+</ul>
+<p>다음 유형의 표식에 대해 배경 및 배경 불투명도를 설정할 수 있습니다.</p>
+<ul class="simple">
+<li><p>영역 선택</p></li>
+<li><p>인출선</p></li>
+<li><p>문자</p></li>
+</ul>
+<p>표식의 색상 또는 크기를 변경하려면 (1) 선 스타일 도구를 선택하고 (2) 색상, 폭 및 불투명도를 설정합니다. 선택 사항은 다르게 변경할 때까지 모든 표식 도구에 대해 유지됩니다.</p>
+<p>이러한 옵션의 배경색을 흰색으로 설정하려면 불투명도를 0으로 줄입니다.</p>
+<p>문자 상자를 작성하려면 문자 도구를 선택하고 화면의 아무 곳이나 클릭합니다. 문자 상자 내에 입력합니다.</p>
+<ol class="arabic">
+<li><p>표식 도구를 사용하여 디자인에 표식을 지정하고 피드백을 추가할 수 있습니다.</p></li>
+<li><p><strong>스냅샷 저장</strong>을 클릭합니다.</p>
+<p>주: 추가한 표식 변경 사항은 <strong>취소 또는 스냅샷 저장</strong>을 클릭할 때까지 뷰어 캔버스에 그대로 남아 있습니다. 스냅샷을 저장하기 전에 모든 표식 변경 사항을 추가하거나 여러 스냅샷을 저장할 수 있습니다.</p>
+</li>
+<li><p>이미지의 이름을 입력하고 <strong>저장</strong>을 클릭합니다.</p></li>
+<li><p><strong>파일 저장</strong>을 선택합니다.</p></li>
+<li><p>저장할 폴더로 이동한 후 <strong>저장</strong>을 클릭합니다.</p></li>
+</ol>
+<section id="id10">
+<h3>표식 편집<a class="headerlink" href="#id10" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>표식 핸들을 사용하여 모든 표식 컨텐츠를 이동하고 크기를 조정할 수 있습니다. 또한 표식을 잘라내고, 복사 및 붙여넣고, 표식에 대한 명령취소 및 명령복구를 수행하고, 표식을 삭제할 수도 있습니다. 표식을 저장할 때까지 문자 상자 내의 문자도 편집할 수 있습니다. 문자 상자 안을 클릭하고 문자를 변경합니다.</p>
+<p>표식 및 주석 추가가 완료되면 <strong>저장</strong>을 클릭합니다. 디자인<strong>에</strong> 표식을 추가하면 파란색 핀이 추가됩니다.</p>
+</section>
+<section id="id11">
+<h3>표식 검토<a class="headerlink" href="#id11" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>표식 변경 사항을 보려면 ** 표시<strong>를 클릭하거나 **주석</strong> 패널을 엽니다. 표식기 위로 마우스를 가져가거나 표식이 포함되어 있는 주석을 클릭하여 표식을 확인합니다. 디자인 뷰가 표식이 추가된 관측점으로 변경됩니다.</p>
+</section>
+<section id="d">
+<h3>표식이 지정된 2D 파일 보기<a class="headerlink" href="#d" title="이 표제에 대한 퍼머링크">#</a></h3>
+<p>뷰어에서 표식이 지정된 2D 파일을 여는 경우, 해당 파일 버전에 대한 모든 표식이 표시됩니다. <strong>주석 및 표식 유틸리티</strong> 내의 <strong>표식기 숨김/표시</strong>를 클릭하여 이런 표식을 숨기거나 표시할 수 있습니다. 특정 표식 및 관련 주석을 보려면 <strong>주석 패널</strong>을 열고 해당 표식에 대한 주석을 클릭합니다. 그러면 모든 다른 표식이 흐리게 표시됩니다. 모든 표식을 다시 보려면 선택한 주석을 다시 클릭합니다.</p>
+<p>팁: 표식에 해당하는 주석을 찾으려면 주석에서 스냅샷을 확인합니다.</p>
+<section id="id12">
+<h4>표식이 지정된 2D 파일에 표식을 추가<a class="headerlink" href="#id12" title="이 표제에 대한 퍼머링크">#</a></h4>
+<p>표식을 추가할 <strong>표식</strong>을 클릭하면, 모든 기존 표식이 흐린 상태로 표시되고 기존 표식에 표식을 추가할 수 있습니다.</p>
+<p><img alt="2D 파일에 표식 지정" src="https://help.autodesk.com/cloudhelp/KOR/Fusion-Import/images/markup-2d-file.png" /></p>
+</section>
+</section>
+</section>
+</section>
+
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="view_design_components.html" title="이전 페이지">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">이전</p>
+            <p class="prev-next-title">디자인 구성요소 보기</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="delete_data_in_fusion_team.html" title="다음 페이지">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">다음</p>
+        <p class="prev-next-title">Fusion Team에서 데이터 삭제</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By leehyungjin<br/>
+  
+      &copy; Copyright 2022, leehyungjin.<br/>
+    Last updated on 2022년 08월 03일.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../../_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>
