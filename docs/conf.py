@@ -61,7 +61,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # a list of builtin themes.
 #
 html_theme = 'sphinx_book_theme'
-html_title = "Fusion360 Docs"
+html_title = "Fusion360 KR"
 html_copy_source = True
 html_sourcelink_suffix = ""
 html_favicon = ""
