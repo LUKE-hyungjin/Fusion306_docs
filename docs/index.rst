@@ -13,6 +13,7 @@ Welcome to fusion360-docs's documentation!
    fusion_docs/collaborate_with_fusion_team/collaborate_with_fusion_team
    fusion_docs/extensions/extensions
    fusion_docs/assemblie/index.md
+   fusion_docs/design_sketch/index.md
 
 
 Indices and tables
