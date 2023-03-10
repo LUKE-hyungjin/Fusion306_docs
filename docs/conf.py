@@ -33,7 +33,7 @@ release = '1.0'
 # ones.
 extensions = [
     "myst_parser",
-    'sphinx_rtd_theme',
+    'sphinx_book_theme',
     'sphinx_markdown_tables',]
 
 source_suffix={'.rst':'restructuredtext', '.md': 'markdown',}
@@ -60,7 +60,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 #
-html_theme = 'sphinx_rtd_theme'
+html_theme = 'sphinx_book_theme'
 html_title = "Fusion360 KR"
 html_copy_source = True
 html_sourcelink_suffix = ""
